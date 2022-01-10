@@ -1,21 +1,23 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-class App extends Component {
-  render() {
+import Calculator from './main/Calculator';
+import GlobalStyles from './styles';
+
+const  App  = () => {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Calculadora</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Por que o 3 e o 7 não podem se casar? <br />
+
+          Porque são primos. O que é uma pena, pois eles formariam um casal 10. 
         </p>
-      </div>
+          <Calculator />
+          <GlobalStyles />
+        </div>
     );
-  }
 }
 
-export default App;
+export default App

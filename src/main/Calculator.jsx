@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import './Calculator.css'
+import React, { Component, useState } from 'react'
+
+import { Calculador } from './styles'
 
 import Button from '../components/Button'
 import Display from '../components/Display'
@@ -13,6 +14,8 @@ const initialState = {
 }
 
 export default class Calculator extends Component {
+    // const [displayValue, setDisplayValue] = useState('0');
+    // const [clearDisplay, setClearDisplay] = useState(false);
 
     state = { ...initialState }
 
@@ -77,7 +80,7 @@ export default class Calculator extends Component {
 
     render() {
         return (
-            <div className="calculator">
+            <Calculador>
                 <Display value={this.state.displayValue} />
                 <Button label="AC" click={this.clearMemory} triple />
                 <Button label="/" click={this.setOperation} operation />
@@ -97,7 +100,7 @@ export default class Calculator extends Component {
                 <Button label="." click={this.addDigit} />
                 <Button label="=" click={this.setOperation} operation />
                 
-            </div>
+            </Calculador>
         )
     }
 }
