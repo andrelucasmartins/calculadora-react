@@ -1,5 +1,7 @@
 import React from 'react'
 
-import { Display } from './styles'
+import { DisplayStyle } from './styles'
 
-export default props => <Display>{props.value}</Display>
+export function Display(props) {
+ return <DisplayStyle>{props.value}</DisplayStyle>
+}

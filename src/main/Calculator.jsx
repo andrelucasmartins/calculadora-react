@@ -2,8 +2,8 @@ import React, { Component, useState } from 'react'
 
 import { Calculador } from './styles'
 
-import Button from '../components/Button'
-import Display from '../components/Display'
+import { Button } from '../components/Button'
+import { Display } from '../components/Display'
 
 const initialState = {
     displayValue: '0',
@@ -98,8 +98,7 @@ export default class Calculator extends Component {
                 <Button label="+" click={this.setOperation} operation />
                 <Button label="0" click={this.addDigit} double />
                 <Button label="." click={this.addDigit} />
-                <Button label="=" click={this.setOperation} operation />
-                
+                <Button label="=" click={this.setOperation} operation />                
             </Calculador>
         )
     }

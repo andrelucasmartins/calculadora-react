@@ -1,14 +1,7 @@
 import React from 'react'
-import { Button } from './styles'
+import { ButtonStyle } from './styles'
 
-// const transaction  = (props) => {
-//     const { operation, double, triple } = props
-//     operation : 'operation';
-//     double : 'double'
-//     triple:  'triple'
-// }
-
-export default props => {
+export function Button (props){
     const { operation, double, triple } = props
     let classes = 'button '
     classes += operation ? 'operation' : ''
@@ -16,10 +9,10 @@ export default props => {
     classes += triple ? 'triple' : ''
     
     return (
-        <Button 
+        <ButtonStyle 
             onClick={e => props.click && props.click(props.label)}
             className={classes}>
             {props.label}
-        </Button>
+        </ButtonStyle>
     )
 }

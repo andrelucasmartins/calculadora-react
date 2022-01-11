@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Display = styled.div`
+const DisplayStyle = styled.div`
   grid-column: span 4;
   background-color: #0004;
 
@@ -12,7 +12,7 @@ const Display = styled.div`
   overflow: hidden;
 `
 
-const Button = styled.button`
+const ButtonStyle = styled.button`
   font-size: 1.4rem;
   background-color: var(--bg-button);
   border: none;
@@ -47,6 +47,6 @@ const Button = styled.button`
 `
 
 export {
-  Display,
-  Button
+  DisplayStyle,
+  ButtonStyle
 }
