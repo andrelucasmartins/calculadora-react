@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { darken } from 'polished'
 
 const DisplayStyle = styled.div`
   grid-column: span 4;
@@ -23,8 +24,11 @@ const ButtonStyle = styled.button`
   padding: 5px;
   border-radius: 3px;
   display: block;
-
+  transition: background-color 0.3s;
+  
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   &:active {
+    box-shadow: none;
     background-color: #ccc;
   }
 
@@ -39,10 +43,11 @@ const ButtonStyle = styled.button`
   &.operation {
     background-color: var(--orange);
     color: #FFF;
+    
   }
 
   &.operation:active {
-    filter: brightness(0.8);
+    background-color: ${darken(0.06, '#e76f51')};
   }
 `
 

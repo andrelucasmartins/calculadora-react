@@ -1,6 +1,7 @@
 ## Calculadora
 
-![Screenshot 2022-01-10 at 03-04-45 React App](https://user-images.githubusercontent.com/15675912/148724626-1c0f9df2-19f4-4c2d-a8a5-076748f17b7d.png)
+![Screenshot 2022-01-10 at 03-04-45 React App](https://user-images.githubusercontent.com/15675912/149042868-e23c80c1-d50c-4664-a222-0f314bcbc34e.png)
+
 
 <p align="center"> A motivação de criar uma calcula, pois é uma aplicativo que mais utilizamos em nosso dia a dia.
 </p>
